@@ -1,0 +1,53 @@
+<style rel="style-sheet">
+    .error-page-body{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .error-card{
+        padding: 30px 40px;
+        border-radius: 7px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    img{
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        margin-inline: auto;
+    }
+
+    h1{
+        font-size: 64px;
+        font-weight: bold;
+        color:dodgerblue;
+    }
+
+    .details{
+        color: silver;
+        font-weight: 500;
+    }
+
+    .filename{
+        font-size: 30px;
+        color: gray;
+        font-weight: 500;
+    }
+
+    .filename span{
+        color: red;
+        font-style: italic;
+    }
+</style>
+
+<div class="error-page-body">
+    <div class="error-card">
+        <img src="images/nodjslogo.png"/>
+        <h1>HTML page doesn't exist</h1>
+        <p class="details">Check if the filename is correct.</p>
+        <p class="filename">Filename - <span>{{errorFilename}}</span></p>
+    </div>
+</div>
